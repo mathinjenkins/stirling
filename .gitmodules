@@ -1,0 +1,12 @@
+[submodule "module/libexponent"]
+	path = module/libexponent
+	url = https://github.com/mathinjenkins/libexponent
+[submodule "module/libsqrt"]
+	path = module/libsqrt
+	url = https://github.com/mathinjenkins/libsqrt
+[submodule "module/libeuler"]
+	path = module/libeuler
+	url = https://github.com/mathinjenkins/libeuler
+[submodule "module/libpi"]
+	path = module/libpi
+	url = https://github.com/mathinjenkins/libpi

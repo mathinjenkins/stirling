@@ -1,0 +1,13 @@
+get_filename_component(Stirling_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+include(CMakeFindDependencyMacro)
+
+list(APPEND CMAKE_MODULE_PATH ${Stirling_CMAKE_DIR})
+find_dependency(Exponent 1.0 REQUIRED MODULE)
+find_dependency(Sqrt 1.0 REQUIRED MODULE)
+list(REMOVE_AT CMAKE_MODULE_PATH -1)
+
+if(NOT TARGET Stirling::Stirling)
+    include("${Stirling_CMAKE_DIR}/StirlingTargets.cmake")
+endif()
+
+set(Stirling_LIBRARIES Stirling::Stirling)
